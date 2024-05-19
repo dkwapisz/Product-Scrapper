@@ -27,15 +27,17 @@ def get_price_from_site_1():
     else:
         raise ValueError(f'Error fetching the page, status code: {response.status_code}, url: {response.reason}')
 
+def get_price_from_site_2():
+    pass
 
 def scrape_prices():
     prices = {
         'Site 1': [],
-        #'Site 2': [],
+        'Site 2': [],
     }
 
     prices['Site 1'].append(get_price_from_site_1())
-    #prices['Site 2'].append(get_price_from_site_2())
+    prices['Site 2'].append(get_price_from_site_2())
 
     return prices
 
