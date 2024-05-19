@@ -27,8 +27,10 @@ def get_price_from_site_1():
     else:
         raise ValueError(f'Error fetching the page, status code: {response.status_code}, url: {response.reason}')
 
+
 def get_price_from_site_2():
     pass
+
 
 def scrape_prices():
     prices = {
